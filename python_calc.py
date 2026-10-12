@@ -27,11 +27,11 @@ def eo(x, y):
     else:
         print("Number 2 is odd")
 
-def mod(x, y):
+def perc(x, y):
     if y == 0:
         print("Modulus by zero is not allowed")
     else:
-        print("Modulus is", x % y)
+        print("Modulus is", (x / y)/100)
 
 def fact(num1, num2):
     if num1 >= 0:
@@ -58,7 +58,7 @@ while True:
         "3. Multiplication\n"
         "4. Division\n"
         "5. Even/Odd\n"
-        "6. Modulus\n"
+        "6. Percentage\n"
         "7. Factorial\n"
         "8. Exit"
     )
@@ -76,7 +76,7 @@ while True:
     elif operation == 5:
         eo(num1, num2)
     elif operation == 6:
-        mod(num1, num2)
+        perc(num1, num2)
     elif operation == 7:
         fact(num1, num2)
     elif operation == 8:
